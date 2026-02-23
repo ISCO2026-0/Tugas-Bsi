@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "El Messiri";
+    src: url('/Fonts/staticElmes/ElMessiri-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('/Fonts/staticCinz/Cinzel-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant SC";
+    src: url('/Fonts/CormorantSC/CormorantSC-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel Decorative";
+    src: url('/Fonts/CinzDec/CinzelDecorative-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@media print {
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+}
+* {
+    margin: 0;
+}
+.judul{
+    padding: 3rem;
+    padding-bottom: 0;
+    font-family: 'Cinzel Decorative';
+    font-size: 12px;
+}
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+header .table{
+    padding: 1rem 3rem;
+    background: linear-gradient(200deg, rgba(174, 64, 238, 0.747), rgba(233, 32, 32, 0.877),rgba(224, 68, 68, 0.856),rgba(174, 64, 238, 0.74));
+    border-radius: 32px;
+    position: relative;
+}
+
+header .table::after{
+    content: '';
+    background-image: linear-gradient(to right, rgb(255, 251, 0), rgb(255, 0, 234));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding:.1em;
+    border-radius: 32px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+}
+
+.content{
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;   
+}
+
+section table{
+  break-inside: avoid;
+  page-break-inside: avoid;
+  background: linear-gradient(240deg, rgb(236, 161, 161), rgb(162, 0, 255), rgb(0, 255, 221));
+  width: 800px;
+  font-family: 'El Messiri';
+}
+section tr:first-child{
+    background: linear-gradient(-170deg, rgba(94, 16, 16, 0.719), rgb(224, 33, 33), rgb(218, 40, 40));
+    text-align: center;
+}
+section tr:nth-child(n+2){
+    background: linear-gradient(140deg, rgb(221, 123, 123), rgba(252, 203, 203, 0.76), rgba(183, 217, 221, 0.527));
+    text-align: center;
+    line-height: 2rem;
+}
+
+section th, section td{
+    width: 300px;
+}
+
+section .wrapper{
+    display: flex;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 20px;
+    margin: 80px auto;
+}
+
+section .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 5px;
+    background: linear-gradient(240deg, rgb(236, 161, 161), rgb(162, 0, 255), rgb(0, 255, 221));
+    width: 600px;
+    height: 240px;
+    align-items: center ;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    justify-content: center;
+}
+
+section .card .head{
+    display: flex;
+    background: linear-gradient(10deg, rgb(236, 161, 161), rgba(162, 0, 255, 0.808), rgba(0, 255, 221, 0.856));
+    padding: 16px 120px ;
+    border-radius: 90px;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel Decorative';
+    white-space: nowrap;
+}
+
+section .card .isi{
+
+    background: linear-gradient(10deg, rgb(243, 176, 176), rgba(205, 136, 245, 0.808), rgba(95, 255, 234, 0.856));
+    padding: 30px 80px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+section .card div h1{
+    font-size: 20px;
+}
+
+section .refleksi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-top: 40px;
+    margin-top: 10px;
+    background: linear-gradient(140deg, rgb(209, 202, 202), rgb(202, 185, 185), rgb(206, 201, 201));
+    border-radius: 20px;
+}
+
+section .refleksi h1{
+    margin-bottom: 5px;
+    font-family: 'Cinzel';
+    
+}
+
+#nama{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+section .refleksi p{
+    text-align: justify;
+}
